@@ -1,0 +1,16 @@
+
+$definebone "ValveBiped.attachment_armL_T" "ValveBiped.Bip01_L_Forearm" 0.000004 -0.000007 -0.000031 6.50731 7.12267 78.669798 0 0 0 0 0 0
+$definebone "ValveBiped.attachment_armR_T" "ValveBiped.Bip01_R_Forearm" 0 -0.000007 -0.000031 6.507306 7.122667 78.669805 0 0 0 0 0 0
+$definebone "ValveBiped.forward" "ValveBiped.Bip01_Head1" 2.000008 -3 0 0 -76 -90.000003 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Knee" "ValveBiped.Bip01_L_Thigh" 18.337015 0.000159 0.000011 -0.000012 2.423262 0.000037 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Knee" "ValveBiped.Bip01_R_Thigh" 18.337019 0.000155 -0.000011 -0.000002 2.422051 0.000113 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Ulna" "ValveBiped.Bip01_L_Forearm" 5.604162 -0.000044 0.000008 -0.000154 -0.000837 -36.884487 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Wrist" "ValveBiped.Bip01_L_Forearm" 11.208309 -0.000089 0.000004 -0.000027 -0.000307 -13.661121 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Elbow" "ValveBiped.Bip01_L_UpperArm" 11.123066 0.000053 -0.000008 -0.000039 -9.261865 -0.000158 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Bicep" "ValveBiped.Bip01_L_UpperArm" 5.560005 -0.699975 -0.500004 0.000007 0.00015 0.630022 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Trapezius" "ValveBiped.Bip01_L_Clavicle" 4.271708 -0.000065 0.000042 -1.898267 0.000005 -0.000064 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm" 11.208286 -0.000172 -0.000004 0.000125 -0.001218 13.904351 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm" 5.604141 -0.000085 -0.000004 -0.000056 -0.000311 7.368858 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Bicep" "ValveBiped.Bip01_R_UpperArm" 5.560013 -0.700013 0.500015 0.00001 -0.000603 -1.732699 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Elbow" "ValveBiped.Bip01_R_UpperArm" 11.123062 -0.00003 0.000011 -0.000029 -9.262775 -0.000154 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Trapezius" "ValveBiped.Bip01_R_Clavicle" 4.271696 0.000011 0.000011 1.263682 -0.000147 0 0 0 0 0 0 0

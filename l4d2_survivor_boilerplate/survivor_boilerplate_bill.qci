@@ -1,0 +1,4 @@
+
+$include "l4d2_survivor_boilerplate/boilerplate_bill/survivor_namvet_bone.qci"
+$include "l4d2_survivor_boilerplate/boilerplate_bill/survivor_namvet_animation.qci"
+$include "l4d2_survivor_boilerplate/survivor_boilerplate__shared.qci"

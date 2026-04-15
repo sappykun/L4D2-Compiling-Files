@@ -1,0 +1,13 @@
+
+$modelname "xdreanims/bill_slot_048.mdl"
+
+$definemacro AddWeaponBoneDefinitions \\
+$definebone "ValveBiped.L_weapon_bone" "ValveBiped.Bip01_L_Hand" 2.856897 -1.536201 -0.9738 -15.616425 -90.427695 -86.009389 0 0 0 0 0 0 \\
+$definebone "ValveBiped.weapon_bone" "ValveBiped.Bip01_R_Hand" 2.856895 -1.536198 -0.9738 -15.616425 -90.427695 -86.009389 0 0 0 0 0 0 \\
+
+$include "l4d2_survivor_boilerplate/macro_animadjustment.qci"
+
+$include "l4d2_survivor_boilerplate/boilerplate_bill/survivor_namvet_bone.qci"
+$include "l4d2_survivor_boilerplate/boilerplate_bill/survivor_namvet_bone_extra.qci"
+$include "l4d2_survivor_boilerplate/boilerplate_bill/anim_namvet_animation.qci"
+$include "l4d2_survivor_boilerplate/boilerplate_bill/Bill_$DeclareSequence_adjust.qci"

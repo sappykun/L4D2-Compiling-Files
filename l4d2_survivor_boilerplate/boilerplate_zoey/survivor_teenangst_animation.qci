@@ -1,0 +1,18 @@
+
+$definevariable declareSequenceFile Zoey_$DeclareSequence.qci
+
+$poseparameter "body_pitch" -90 90 loop 360
+$poseparameter "body_yaw" -90 90 loop 360
+$poseparameter "head_pitch" -90 90 loop 360
+$poseparameter "head_yaw" -90 90 loop 360
+
+$sequence "TeenAngst" $correctiveAnimation$ fps 30
+$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
+
+$include l4d2_survivor_boilerplate/boilerplate_zoey/$declareSequenceFile$
+
+$includemodel "survivors/anim_TeenAngst.mdl"
+$includemodel "survivors/gestures_TeenAngst.mdl"
+
+$animation a_proportions $baseAnimation$ subtract "TeenAngst" 0
+$sequence proportions a_proportions predelta autoplay

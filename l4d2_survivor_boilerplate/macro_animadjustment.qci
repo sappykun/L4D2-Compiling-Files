@@ -1,0 +1,48 @@
+/*
+	A quick and easy way to adjust specific animations if your survivor clips into the floor or wall.
+	Use the macro, compile your model, then use HLMV to see how different values affect a given
+	animation.
+
+	Usage: $AnimAdjustment <animation> ox oy oz ax ay az
+	ox moves left/right, oy moves forward/back, oz moves up/down.
+	ax tilts the model forwards/backwards, ay tilts left/right, az changes the overall yaw.
+
+	This boilerplate comes with the decompiled SMDs for 10 animations that are the most noticably
+	broken when your model has wildly different proportions than the survivor it's replacing.
+	
+	These should all have the same offsets:
+		Idle_Incap_Pistol
+			- Laying on the ground, incapped with a single pistol or magnum.
+		Idle_Incap_Elites
+			- Laying on the ground, incapped with dual pistols.
+		Idle_Incap_Pounced
+			- Laying on the ground, pounced by a Hunter.	
+		incap_crawl
+			- Crawling when incapped. Normally unused, reimplemented in some addons and Sourcemod plugins.
+			- Coach is the only survivor who doesn't have or define this animation.
+
+	These should both have the same offsets:
+		Die_Incap
+			- Dying while incapped.
+		Defib_jolt
+			- Getting shocked by the defibrillator when dead.
+
+	These should all have unique offsets based on the model you're replacing:
+		Idle_Incap_Hanging1
+			- Hanging from a ledge, forearms on the ground.
+		Idle_Incap_Hanging2
+			- Hanging from a ledge, two hands.
+		Idle_Incap_Hanging3
+			- Hanging from a ledge, one hand.
+		Die_Standing
+			- Falling and dying while standing.
+
+	If I missed an animation, you can add your own by placing the decompiled SMD to the 
+	anim folder of the survivor you're replacing, then replace the $declaresequence line 
+	with the $sequence block from the decompiled mdl of the animation set. Use the existing
+	$sequence blocks as a reference.
+*/
+
+$definemacro AnimAdjustment anim ox oy oz ax ay az \\
+$continue $anim$ origin $ox$ $oy$ $oz$ \\
+$continue $anim$ angles $ax$ $ay$ $az$ \\

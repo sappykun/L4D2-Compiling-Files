@@ -1,0 +1,13 @@
+$include "l4d2_survivor_boilerplate/macro_animadjustment.qci"
+
+$surfaceprop "flesh"
+$contents "solid"
+$illumposition -0.555 2.533 32.487
+$eyeposition 0 0 70
+$maxeyedeflection 30
+$forcephonemecrossfade
+$ambientboost
+$mostlyopaque
+
+$include "l4d2_survivor_boilerplate/boilerplate_rochelle/survivor_producer_animation.qci"
+$include "l4d2_survivor_boilerplate/shared_weapon_bone_attachments.qci"
