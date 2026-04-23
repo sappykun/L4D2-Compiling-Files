@@ -14,3 +14,4 @@ $definebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm" 5.604141 -0.0
 $definebone "ValveBiped.Bip01_R_Bicep" "ValveBiped.Bip01_R_UpperArm" 5.560013 -0.700013 0.500015 0.00001 -0.000603 -1.732699 0 0 0 0 0 0
 $definebone "ValveBiped.Bip01_R_Elbow" "ValveBiped.Bip01_R_UpperArm" 11.123062 -0.00003 0.000011 -0.000029 -9.262775 -0.000154 0 0 0 0 0 0
 $definebone "ValveBiped.Bip01_R_Trapezius" "ValveBiped.Bip01_R_Clavicle" 4.271696 0.000011 0.000011 1.263682 -0.000147 0 0 0 0 0 0 0
+$definebone "ValveBiped.forward" "ValveBiped.Bip01_Head1" 2.000008 -3 0 0 -76 -90.000003 0 0 0 0 0 0
