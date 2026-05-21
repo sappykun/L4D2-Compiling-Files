@@ -1,0 +1,18 @@
+
+$definevariable declareSequenceFile declaresequence.qci
+
+$poseparameter "body_pitch" -90 90 loop 360
+$poseparameter "body_yaw" -90 90 loop 360
+$poseparameter "head_pitch" -90 90 loop 360
+$poseparameter "head_yaw" -90 90 loop 360
+
+$sequence "gambler" $correctiveAnimation$ fps 30
+$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
+
+$include l4d2_survivor_boilerplate/boilerplate_nick/$declareSequenceFile$
+
+$includemodel "survivors/anim_gambler.mdl"
+$includemodel "survivors/gestures_gambler.mdl"
+
+$animation a_proportions $baseAnimation$ subtract "gambler" 0
+$sequence proportions a_proportions predelta autoplay

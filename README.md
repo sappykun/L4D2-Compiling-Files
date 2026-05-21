@@ -4,10 +4,10 @@ Boilerplate for L4D2 models I use. Not entirely production ready yet.
 
 | Survivor  | Status |
 | --- | --- |
-| Nick | TODO |
+| Nick | DONE |
 | Rochelle  | TODO |
 | Coach  | TODO  |
-| Ellis  | TODO  |
+| Ellis  | DONE  |
 | Bill  | DONE  |
 | Zoey  | DONE  |
 | Francis  | TODO - make compatible with XDR by default  |

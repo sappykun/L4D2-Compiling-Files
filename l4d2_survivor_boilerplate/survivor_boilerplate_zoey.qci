@@ -1,4 +1,0 @@
-
-$include "l4d2_survivor_boilerplate/boilerplate_zoey/survivor_teenangst_bone.qci"
-$include "l4d2_survivor_boilerplate/boilerplate_zoey/survivor_teenangst_animation.qci"
-$include "l4d2_survivor_boilerplate/survivor_boilerplate__shared.qci"

@@ -525,7 +525,7 @@ $declaresequence "Collapse_to_Incap"
 
 //$declaresequence "Idle_Incap_Pistol"
 $sequence "Idle_Incap_Pistol" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Idle_Incap_Pistol.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Idle_Incap_Pistol.smd"
 	activity "ACT_IDLE_INCAP_PISTOL" -1
 	fadein 0.85
 	fadeout 0.75
@@ -538,7 +538,7 @@ $sequence "Idle_Incap_Pistol" {
 
 //$declaresequence "Idle_Incap_Elites"
 $sequence "Idle_Incap_Elites" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Idle_Incap_Elites.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Idle_Incap_Elites.smd"
 	activity "ACT_IDLE_INCAP_ELITES" -1
 	fadein 0.85
 	fadeout 0.75
@@ -554,7 +554,7 @@ $declaresequence "GetUpFrom_Incap_Crouching_01"
 
 //$declaresequence "incap_crawl"
 $sequence "incap_crawl" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/incap_crawl.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/incap_crawl.smd"
 	activity "ACT_TERROR_INCAP_CRAWL" -1
 	fadein 0.2
 	fadeout 0.2
@@ -573,7 +573,7 @@ $declaresequence "Collapse_to_Incap_Pounced"
 
 //$declaresequence "Idle_Incap_Pounced"
 $sequence "Idle_Incap_Pounced" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Idle_Incap_Pounced.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Idle_Incap_Pounced.smd"
 	activity "ACT_IDLE_POUNCED" -1
 	fadein 0.2
 	fadeout 0.2
@@ -597,7 +597,7 @@ $declaresequence "GetUpFrom_TankPunch"
 
 //Idle_Incap_Hanging1
 $sequence "Idle_Incap_Hanging1" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Idle_Incap_Hanging1.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Idle_Incap_Hanging1.smd"
 	activity "ACT_TERROR_LEDGE_HANG_FIRM" -1
 	fadein 0.2
 	fadeout 0.2
@@ -608,7 +608,7 @@ $sequence "Idle_Incap_Hanging1" {
 
 //Idle_Incap_Hanging2
 $sequence "Idle_Incap_Hanging2" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Idle_Incap_Hanging2.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Idle_Incap_Hanging2.smd"
 	activity "ACT_TERROR_LEDGE_HANG_WEAK" -1
 	fadein 0.2
 	fadeout 0.2
@@ -619,7 +619,7 @@ $sequence "Idle_Incap_Hanging2" {
 
 //Idle_Incap_Hanging3
 $sequence "Idle_Incap_Hanging3" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Idle_Incap_Hanging3.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Idle_Incap_Hanging3.smd"
 	activity "ACT_TERROR_LEDGE_HANG_DANGLE" -1
 	fadein 0.2
 	fadeout 0.2
@@ -888,7 +888,7 @@ $declaresequence "Defibrillate_Incap_Crouching"
 
 //$declaresequence "Die_Standing"
 $sequence "Die_Standing" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Die_Standing.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Die_Standing.smd"
 	activity "ACT_DIE_STANDING" -1
 	fadein 0.2
 	fadeout 0.2
@@ -898,7 +898,7 @@ $sequence "Die_Standing" {
 
 //$declaresequence "Die_Incap"
 $sequence "Die_Incap" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Die_Incap.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Die_Incap.smd"
 	activity "ACT_DIE_INCAP" -1
 	fadein 0.2
 	fadeout 0.2
@@ -910,7 +910,7 @@ $declaresequence "Defib_Revive"
 
 //$declaresequence "Defib_jolt"
 $sequence "Defib_jolt" {
-	"l4d2_survivor_boilerplate/boilerplate_zoey/anim_teenangst/Defib_jolt.smd"
+	"l4d2_survivor_boilerplate/zoey/anim/Defib_jolt.smd"
 	activity "ACT_TERROR_DEFIBRILLATOR_SHOCK" -1
 	fadein 0.2
 	fadeout 0.2

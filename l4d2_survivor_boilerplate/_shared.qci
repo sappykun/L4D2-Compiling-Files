@@ -1,6 +1,11 @@
-$include "l4d2_survivor_boilerplate/macro_animadjustment.qci"
+$include "l4d2_survivor_boilerplate/_macro_animadjustment.qci"
 
 $unlockdefinebones
+
+$poseparameter "body_pitch" -90 90 loop 360
+$poseparameter "body_yaw" -90 90 loop 360
+$poseparameter "head_pitch" -90 90 loop 360
+$poseparameter "head_yaw" -90 90 loop 360
 
 // Basic HL2 attachments used for face tracking and mouth illumination
 // Shouldn't need to change these, the exact position is not important
