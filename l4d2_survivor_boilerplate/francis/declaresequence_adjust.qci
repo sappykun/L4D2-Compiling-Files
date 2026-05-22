@@ -1,6 +1,4 @@
 
-$sequence "Biker" $correctiveAnimation$ fps 30.00
-
 $declaresequence "animHack"
 $declaresequence "Heal_Self_Standing_06"
 $declaresequence "Idlenoise"
