@@ -55,6 +55,9 @@ $definebone "ValveBiped.Bip01_R_Finger02" "ValveBiped.Bip01_R_Finger01" 1.223946
 
 $AddWeaponBoneDefinitions
 
+$definebone "ValveBiped.attachment_bandage_armL" "ValveBiped.Bip01_L_Forearm" 0.000004 -0.000007 -0.000031 6.50731 7.12267 78.669798 0 0 0 0 0 0
+$definebone "ValveBiped.attachment_bandage_legL" "ValveBiped.Bip01_L_Calf" 0 0 0 -3.939487 -74.439527 -4.413494 0 0 0 0 0 0
+
 $definebone "ValveBiped.weapon_bone_Clip" "ValveBiped.weapon_bone" 0 0 10 0 -0.000003 0 0 0 0 0 0 0
 $definebone "ValveBiped.weapon_bone_extra" "ValveBiped.weapon_bone" 0.018898 0.665159 9.395884 0 -0.000003 0 0 0 0 0 0 0
 $definebone "ValveBiped.weapon_bone_Clip2" "ValveBiped.Bip01_L_Hand" 3.02821 -0.923409 -2.009452 -0.743371 90.942357 90.188249 0 0 0 0 0 0
@@ -64,10 +67,6 @@ $definebone "ValveBiped.weapon_bone_Clip_Bullets" "ValveBiped.weapon_bone_Clip" 
 $definebone "ValveBiped.weapon_bolt" "ValveBiped.weapon_bone" 0 0 0.000002 0 -0.000003 0 0 0 0 0 0 0
 $definebone "ValveBiped.weapon_bolt_opposite" "ValveBiped.weapon_bone" 0 0 0.000002 0 -0.000003 0 0 0 0 0 0 0
 $definebone "ValveBiped.weapon_charger" "ValveBiped.weapon_bone" 0 0 0.000002 0 -0.000003 0 0 0 0 0 0 0
-
-$definebone "ValveBiped.attachment_bandage_armL" "ValveBiped.Bip01_L_Forearm" 0.000004 -0.000007 -0.000031 6.50731 7.12267 78.669798 0 0 0 0 0 0
-$definebone "ValveBiped.attachment_bandage_legL" "ValveBiped.Bip01_L_Calf" 0 0 0 -3.939487 -74.439527 -4.413494 0 0 0 0 0 0
-
 
 $bonemerge "ValveBiped.Bip01_Pelvis"
 $bonemerge "ValveBiped.Bip01_Spine"

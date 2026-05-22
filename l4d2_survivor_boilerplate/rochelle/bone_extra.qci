@@ -1,0 +1,18 @@
+
+$definebone "ValveBiped.Bip01_R_Knee" "ValveBiped.Bip01_R_Thigh" 16.283249 0 0 0 1.446719 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Knee" "ValveBiped.Bip01_L_Thigh" 16.283253 0 0 0 1.446891 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Ulna" "ValveBiped.Bip01_L_Forearm" 4.976479 0 0.000004 -0.00001 0.000002 -7.237035 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Wrist" "ValveBiped.Bip01_L_Forearm" 9.952959 0 0.000006 -0.00001 0.000002 -13.660902 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Elbow" "ValveBiped.Bip01_L_UpperArm" 9.877266 0 0.000002 -0.00001 -9.262342 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm" 9.952957 -0.000001 -0.000004 0.00002 -0.000001 13.903737 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm" 4.976482 0 -0.000002 0.00002 -0.000001 7.369184 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Elbow" "ValveBiped.Bip01_R_UpperArm" 9.877266 0 0 0.000019 -9.26229 -0.000003 0 0 0 0 0 0
+$definebone "ValveBiped.attachment_armL_T" "ValveBiped.Bip01_L_Forearm" 0 -0.000007 -0.000031 6.507303 7.122671 78.669798 0 0 0 0 0 0
+$definebone "ValveBiped.attachment_armR_T" "ValveBiped.Bip01_R_Forearm" 0 -0.000007 -0.000031 6.507316 7.122669 78.669798 0 0 0 0 0 0
+$definebone "ValveBiped.forward" "ValveBiped.Bip01_Head1" 2 -3 0 0 -76 -90.000003 0 0 0 0 0 0
+$definebone "jiggle_earring_r" "ValveBiped.Bip01_Head1" 1.264267 1.414777 2.826357 51.723069 -86.481294 89.320385 0 0 0 0 0 0
+$definebone "jiggle_earring_l" "ValveBiped.Bip01_Head1" 1.268272 1.371145 -2.803593 58.803605 95.451689 -88.822225 0 0 0 0 0 0
+
+$definemacro AddWeaponBoneDefinitions \\
+$definebone "ValveBiped.L_weapon_bone" "ValveBiped.Bip01_L_Hand" 3.348999 -1.370998 0.725 -5.043 89.254986 113.321998 0 0 0 0 0 0 \\
+$definebone "ValveBiped.weapon_bone" "ValveBiped.Bip01_R_Hand" 2.856897 -1.5362 -0.9738 -15.616423 -90.427702 -86.009389 0 0 0 0 0 0 \\

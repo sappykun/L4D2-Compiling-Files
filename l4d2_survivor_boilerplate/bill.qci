@@ -3,11 +3,6 @@ $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/bill/bone.qci"
 
-$poseparameter "body_pitch" -90 90 loop 360
-$poseparameter "body_yaw" -90 90 loop 360
-$poseparameter "head_pitch" -90 90 loop 360
-$poseparameter "head_yaw" -90 90 loop 360
-
 $sequence "NamVet" $correctiveAnimation$ fps 30
 $sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
 

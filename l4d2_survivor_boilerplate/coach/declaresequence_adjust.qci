@@ -613,7 +613,7 @@ $declaresequence "Collapse_to_Incap"
 
 //$declaresequence "Idle_Incap_Pistol"
 $sequence "Idle_Incap_Pistol" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Idle_Incap_Pistol.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Idle_Incap_Pistol.smd"
 	activity "ACT_IDLE_INCAP_PISTOL" -1
 	fadein 1
 	fadeout 0.75
@@ -629,7 +629,7 @@ $sequence "Idle_Incap_Pistol" {
 
 //$declaresequence "Idle_Incap_Elites"
 $sequence "Idle_Incap_Elites" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Idle_Incap_Elites.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Idle_Incap_Elites.smd"
 	activity "ACT_IDLE_INCAP_ELITES" -1
 	fadein 1
 	fadeout 0.75
@@ -651,7 +651,7 @@ $declaresequence "Collapse_to_Incap_Pounced"
 
 //$declaresequence "Idle_Incap_Pounced"
 $sequence "Idle_Incap_Pounced" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Idle_Incap_Pounced.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Idle_Incap_Pounced.smd"
 	activity "ACT_IDLE_POUNCED" -1
 	fadein 0.2
 	fadeout 0.2
@@ -676,7 +676,7 @@ $declaresequence "GetUpFrom_TankPunch"
 
 //$declaresequence "Idle_Incap_Hanging1"
 $sequence "Idle_Incap_Hanging1" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Idle_Incap_Hanging1.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Idle_Incap_Hanging1.smd"
 	activity "ACT_TERROR_LEDGE_HANG_FIRM" -1
 	fadein 0.2
 	fadeout 0.2
@@ -690,7 +690,7 @@ $sequence "Idle_Incap_Hanging1" {
 
 //$declaresequence "Idle_Incap_Hanging2"
 $sequence "Idle_Incap_Hanging2" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Idle_Incap_Hanging2.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Idle_Incap_Hanging2.smd"
 	activity "ACT_TERROR_LEDGE_HANG_WEAK" -1
 	fadein 0.2
 	fadeout 0.2
@@ -704,7 +704,7 @@ $sequence "Idle_Incap_Hanging2" {
 
 //$declaresequence "Idle_Incap_Hanging3"
 $sequence "Idle_Incap_Hanging3" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Idle_Incap_Hanging3.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Idle_Incap_Hanging3.smd"
 	activity "ACT_TERROR_LEDGE_HANG_DANGLE" -1
 	fadein 0.2
 	fadeout 0.2
@@ -752,7 +752,7 @@ $declaresequence "Defibrillate_Incap_Crouching"
 
 //$declaresequence "Die_Standing"
 $sequence "Die_Standing" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Die_Standing.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Die_Standing.smd"
 	activity "ACT_DIE_STANDING" -1
 	{ event 5004 27 "Player.JumpLand" }
 	{ event AE_FOOTSTEP_LEFT 61 "" }
@@ -768,7 +768,7 @@ $sequence "Die_Standing" {
 
 //$declaresequence "Die_Incap"
 $sequence "Die_Incap" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Die_Incap.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Die_Incap.smd"
 	activity "ACT_DIE_INCAP" -1
 	fadein 0.2
 	fadeout 0.2
@@ -783,7 +783,7 @@ $declaresequence "Defib_Revive"
 
 //$declaresequence "Defib_jolt"
 $sequence "Defib_jolt" {
-	"l4d2_survivor_boilerplate/boilerplate_coach/anim_coach/Defib_jolt.smd"
+	"l4d2_survivor_boilerplate/coach/anim/Defib_jolt.smd"
 	activity "ACT_TERROR_DEFIBRILLATOR_SHOCK" -1
 	fadein 0.2
 	fadeout 0.2

@@ -1,0 +1,20 @@
+
+$definebone "ValveBiped.Bip01_R_Knee" "ValveBiped.Bip01_R_Thigh" 19.253841 0 0 0 1.446719 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Quadricep" "ValveBiped.Bip01_R_Thigh" 6.694798 0 0 0 0 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Quadricep" "ValveBiped.Bip01_L_Thigh" 6.694801 0 0 0 0 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Knee" "ValveBiped.Bip01_L_Thigh" 19.253845 0 0 0 1.446891 0 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Ulna" "ValveBiped.Bip01_L_Forearm" 5.88435 0 0.000004 -0.00001 0 -7.237035 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Wrist" "ValveBiped.Bip01_L_Forearm" 11.768705 0 0 -0.00001 0 -13.6609 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Elbow" "ValveBiped.Bip01_L_UpperArm" 11.679195 0 0.000008 -0.000012 -9.262344 0.000001 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm" 11.768703 0 -0.000008 0.000012 0 13.903741 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm" 5.884356 0 -0.000004 0.000012 0 7.369185 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Elbow" "ValveBiped.Bip01_R_UpperArm" 11.679195 0 0 0.000014 -9.262287 -0.000001 0 0 0 0 0 0
+$definebone "ValveBiped.attachment_armL_T" "ValveBiped.Bip01_L_Forearm" 0 -0.000007 -0.000031 6.507307 7.122669 78.669798 0 0 0 0 0 0
+$definebone "ValveBiped.attachment_armR_T" "ValveBiped.Bip01_R_Forearm" -0.000004 -0.000007 -0.000031 6.507314 7.12267 78.669798 0 0 0 0 0 0
+$definebone "ValveBiped.forward" "ValveBiped.Bip01_Head1" 2.000008 -3 0 0 -76 -90.000003 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_L_Bicep" "ValveBiped.Bip01_L_UpperArm" 5.838017 -0.734899 -0.525028 0.000031 0.000007 -0.000062 0 0 0 0 0 0
+$definebone "ValveBiped.Bip01_R_Bicep" "ValveBiped.Bip01_R_UpperArm" 5.837929 -0.640936 0.524933 0.000304 0.000337 -2.834824 0 0 0 0 0 0
+
+
+$definebone "ValveBiped.L_weapon_bone" "ValveBiped.Bip01_L_Hand" 3.348999 -1.371 0.725 -5.043001 89.255 113.321998 0 0 0 0 0 0
+$definebone "ValveBiped.weapon_bone" "ValveBiped.Bip01_R_Hand" 2.856895 -1.536201 -0.9738 -15.616423 -90.427695 -86.009389 0 0 0 0 0 0

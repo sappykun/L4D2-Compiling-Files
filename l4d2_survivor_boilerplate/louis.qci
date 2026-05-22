@@ -1,13 +1,14 @@
-$include "l4d2_survivor_boilerplate/macro_animadjustment.qci"
 
-$surfaceprop "flesh"
-$contents "solid"
-$illumposition -1.788 -1.26 37.579
-$eyeposition 0 0 71
-$maxeyedeflection 30
-$forcephonemecrossfade
-$ambientboost
-$mostlyopaque
+$definevariable declareSequenceFile declaresequence.qci
 
-$include "l4d2_survivor_boilerplate/boilerplate_louis/survivor_manager_animation.qci"
-$include "l4d2_survivor_boilerplate/shared_weapon_bone_attachments.qci"
+$include "l4d2_survivor_boilerplate/louis/bone.qci"
+
+$include l4d2_survivor_boilerplate/louis/$declareSequenceFile$
+
+$includemodel "survivors/anim_NamVet.mdl"
+$includemodel "survivors/gestures_namvet.mdl"
+
+$animation a_proportions $baseAnimation$ subtract "NamVet" 0
+$sequence proportions a_proportions predelta autoplay
+
+$include "l4d2_survivor_boilerplate/_shared.qci"
