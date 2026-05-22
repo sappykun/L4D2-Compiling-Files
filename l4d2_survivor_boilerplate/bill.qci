@@ -3,15 +3,13 @@ $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/bill/bone.qci"
 
-$sequence "NamVet" $correctiveAnimation$ fps 30
-$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
-
+$sequence "namvet" $correctiveAnimation$ fps 30.00
 $include l4d2_survivor_boilerplate/bill/$declareSequenceFile$
 
-$includemodel "survivors/anim_NamVet.mdl"
+$includemodel "survivors/anim_namvet.mdl"
 $includemodel "survivors/gestures_namvet.mdl"
 
-$animation a_proportions $baseAnimation$ subtract "NamVet" 0
+$animation a_proportions $baseAnimation$ subtract "namvet" 0
 $sequence proportions a_proportions predelta autoplay
 
 $include "l4d2_survivor_boilerplate/_shared.qci"

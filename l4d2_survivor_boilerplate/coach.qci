@@ -1,13 +1,15 @@
-$include "l4d2_survivor_boilerplate/macro_animadjustment.qci"
 
-$surfaceprop "flesh"
-$contents "solid"
-$illumposition -0.319 0.185 37.536
-$eyeposition 0 0 70
-$maxeyedeflection 30
-$forcephonemecrossfade
-$ambientboost
-$mostlyopaque
+$definevariable declareSequenceFile declaresequence.qci
 
-$include "l4d2_survivor_boilerplate/boilerplate_coach/survivor_coach_animation.qci"
-$include "l4d2_survivor_boilerplate/survivor_boilerplate__shared.qci"
+$include "l4d2_survivor_boilerplate/coach/bone.qci"
+
+$sequence "coach" $correctiveAnimation$ fps 30.00
+$include l4d2_survivor_boilerplate/coach/$declareSequenceFile$
+
+$includemodel "survivors/anim_coach.mdl"
+$includemodel "survivors/gestures_coach.mdl"
+
+$animation a_proportions $baseAnimation$ subtract "coach" 0
+$sequence proportions a_proportions predelta autoplay
+
+$include "l4d2_survivor_boilerplate/_shared.qci"

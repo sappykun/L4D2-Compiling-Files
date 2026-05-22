@@ -3,10 +3,8 @@ $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/rochelle/bone.qci"
 
-$sequence "producer" $correctiveAnimation$ fps 30
-$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
-
-$include l4d2_survivor_boilerplate/bill/$declareSequenceFile$
+$sequence "producer" $correctiveAnimation$ fps 30.00
+$include l4d2_survivor_boilerplate/rochelle/$declareSequenceFile$
 
 $includemodel "survivors/anim_producer.mdl"
 $includemodel "survivors/gestures_producer.mdl"

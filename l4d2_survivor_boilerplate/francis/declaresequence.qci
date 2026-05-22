@@ -1,8 +1,19 @@
 
-$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
-
-$declaresequence "Idle_Standing_Align"
+$declaresequence "animHack"
+$declaresequence "Heal_Self_Standing_06"
 $declaresequence "Idlenoise"
+$declaresequence "Idle_Standing_Align"
+$declaresequence "Idle_Standing_Rifle"
+$declaresequence "NamVet_AimMatrix_Rifle_Walking"
+$declaresequence "NamVet_AimMatrix_Rifle_CrouchWalking"
+$declaresequence "NamVet_AimMatrix_Rifle_Standing_Calm"
+$declaresequence "NamVet_AimMatrix_Rifle_Standing"
+$declaresequence "francis_AimMatrix_Rifle_Running"
+$declaresequence "Run_Rifle"
+$declaresequence "idle_axe_mdl"
+
+$sequence "ragdoll" $correctiveAnimation$ ACT_DIERAGDOLL 1 fps 30.00
+
 $declaresequence "InjuredIdlenoise"
 $declaresequence "CalmIdlenoise"
 $declaresequence "CalmIdlenoisePistol"
@@ -14,7 +25,6 @@ $declaresequence "NamVet_AimMatrix_Elites_Standing_arms"
 $declaresequence "Idle_Standing_Elites"
 $declaresequence "NamVet_Reload_Rifle_Standing_layer"
 $declaresequence "NamVet_Reload_Rifle_Standing_arms"
-$declaresequence "Idle_Standing_Rifle"
 $declaresequence "NamVet_AimMatrix_Shotgun_Standing_layer"
 $declaresequence "NamVet_AimMatrix_Shotgun_Standing_arms"
 $declaresequence "Idle_Standing_Shotgun"
@@ -244,7 +254,6 @@ $declaresequence "CalmRunN_PumpShotgun_arms"
 $declaresequence "CalmRun_PumpShotgun"
 $declaresequence "Walk_Rifle"
 $declaresequence "CrouchWalk_Rifle"
-$declaresequence "Run_Rifle"
 $declaresequence "LimpWalk_Pistol"
 $declaresequence "LimpWalk_Elites"
 $declaresequence "LimpWalk_Rifle"
@@ -279,12 +288,8 @@ $declaresequence "NamVet_AimMatrix_Elites_Running"
 $declaresequence "NamVet_AimMatrix_Elites_CrouchWalking"
 $declaresequence "NamVet_AimMatrix_Elites_LimpWalking"
 $declaresequence "NamVet_AimMatrix_Elites_LimpRunning"
-$declaresequence "NamVet_AimMatrix_Rifle_Standing"
 $declaresequence "NamVet_AimMatrix_Rifle_Running"
-$declaresequence "NamVet_AimMatrix_Rifle_Walking"
-$declaresequence "NamVet_AimMatrix_Rifle_CrouchWalking"
 $declaresequence "NamVet_AimMatrix_Rifle_LimpRunning"
-$declaresequence "NamVet_AimMatrix_Rifle_Standing_Calm"
 $declaresequence "NamVet_AimMatrix_Shotgun_Standing"
 $declaresequence "NamVet_AimMatrix_Shotgun_CrouchWalking"
 $declaresequence "NamVet_AimMatrix_Grenade_Standing"
@@ -474,7 +479,6 @@ $declaresequence "Unholster_Standing_Shotgun"
 $declaresequence "Unholster_Standing_Gren_layer"
 $declaresequence "Unholster_Standing_Gren"
 $declaresequence "Idle_Rescue_01c"
-$declaresequence "Heal_Self_Standing_06"
 $declaresequence "Heal_Self_Crouching"
 $declaresequence "Heal_Self_Crouching_01"
 $declaresequence "Heal_Incap_Standing"
@@ -519,47 +523,14 @@ $declaresequence "Pulled_Running_Rifle"
 $declaresequence "IncapIdlenoise"
 $declaresequence "Death"
 $declaresequence "Idle_Incap"
-
-//$declaresequence "Idle_Incap_Pistol"
-$sequence "Idle_Incap_Pistol" {
-	"l4d2_survivor_boilerplate/bill/anim/Idle_Incap_Pistol.smd"
-	activity "ACT_IDLE_INCAP_PISTOL" -1
-	fadein 1
-	fadeout 0.75
-	addlayer "IncapIdlenoise"
-	addlayer "NamVet_AimMatrix_Pistol_Incap"
-	fps 50
-	loop
-}
-
-//$declaresequence "Idle_Incap_Elites"
-$sequence "Idle_Incap_Elites" {
-	"l4d2_survivor_boilerplate/bill/anim/Idle_Incap_Elites.smd"
-	activity "ACT_IDLE_INCAP_ELITES" -1
-	fadein 1
-	fadeout 0.75
-	addlayer "IncapIdlenoise"
-	addlayer "NamVet_AimMatrix_Elites_Incap"
-	fps 50
-	loop
-}
-
+$declaresequence "Idle_Incap_Pistol"
+$declaresequence "Idle_Incap_Elites"
 $declaresequence "GetUpFrom_Incap"
 $declaresequence "GetUpFrom_Incap_04"
 $declaresequence "GetUpFrom_Incap_05"
 $declaresequence "GetUpFrom_Incap_Crouching_01"
 $declaresequence "Collapse_to_Incap_Pounced"
-
-//$declaresequence "Idle_Incap_Pounced"
-$sequence "Idle_Incap_Pounced" {
-	"l4d2_survivor_boilerplate/bill/anim/Idle_Incap_Pounced.smd"
-	activity "ACT_IDLE_POUNCED" -1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
+$declaresequence "Idle_Incap_Pounced"
 $declaresequence "GetUpFrom_Pounced"
 $declaresequence "Collapse_to_Incap_Tongue_germany"
 $declaresequence "Idle_Incap_Hanging_SmokerChoke_germany"
@@ -571,53 +542,15 @@ $declaresequence "GetUpFrom_TankRock"
 $declaresequence "Hit_by_TankPunch"
 $declaresequence "Idle_Fall_From_TankPunch"
 $declaresequence "GetUpFrom_TankPunch"
-
-//$declaresequence "incap_crawl"
-$sequence "incap_crawl" {
-	"l4d2_survivor_boilerplate/bill/anim/incap_crawl.smd"
-	activity "ACT_TERROR_INCAP_CRAWL" -1
-	fadein 0.2
-	fadeout 0.2
-	fps 20
-	loop
-}
-
+$declaresequence "incap_crawl"
 $declaresequence "incap_drag_front"
 $declaresequence "incap_drag_back"
 $declaresequence "incap_drag_left"
 $declaresequence "incap_drag_right"
 $declaresequence "drag"
-
-//$declaresequence "Idle_Incap_Hanging1"
-$sequence "Idle_Incap_Hanging1" {
-	"l4d2_survivor_boilerplate/bill/anim/Idle_Incap_Hanging1.smd"
-	activity "ACT_TERROR_LEDGE_HANG_FIRM" -1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
-//$declaresequence "Idle_Incap_Hanging2"
-$sequence "Idle_Incap_Hanging2" {
-	"l4d2_survivor_boilerplate/bill/anim/Idle_Incap_Hanging2.smd"
-	activity "ACT_TERROR_LEDGE_HANG_WEAK" -1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
-//$declaresequence "Idle_Incap_Hanging3"
-$sequence "Idle_Incap_Hanging3" {
-	"l4d2_survivor_boilerplate/bill/anim/Idle_Incap_Hanging3.smd"
-	activity "ACT_TERROR_LEDGE_HANG_DANGLE" -1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
+$declaresequence "Idle_Incap_Hanging1"
+$declaresequence "Idle_Incap_Hanging2"
+$declaresequence "Idle_Incap_Hanging3"
 $declaresequence "Collapse_to_Hanging"
 $declaresequence "GetUpFrom_Ledge"
 $declaresequence "GetUpFrom_Ledge_Crouching"
@@ -840,39 +773,10 @@ $declaresequence "survivor_ridden_lower_walk"
 $declaresequence "coach_adrenaline_use"
 $declaresequence "Defibrillate_Incap_Standing"
 $declaresequence "Defibrillate_Incap_Crouching"
-
-//$declaresequence "Die_Standing"
-$sequence "Die_Standing" {
-	"l4d2_survivor_boilerplate/bill/anim/Die_Standing.smd"
-	activity "ACT_DIE_STANDING" -1
-	{ event 5004 27 "Player.JumpLand" }
-	{ event AE_FOOTSTEP_LEFT 61 "" }
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	walkframe 28 LX LY
-}
-
-//$declaresequence "Die_Incap"
-$sequence "Die_Incap" {
-	"l4d2_survivor_boilerplate/bill/anim/Die_Incap.smd"
-	activity "ACT_DIE_INCAP" -1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
-
+$declaresequence "Die_Standing"
+$declaresequence "Die_Incap"
 $declaresequence "Defib_Revive"
-
-//$declaresequence "Defib_jolt"
-$sequence "Defib_jolt" {
-	"l4d2_survivor_boilerplate/bill/anim/Defib_jolt.smd"
-	activity "ACT_TERROR_DEFIBRILLATOR_SHOCK" -1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
-
+$declaresequence "Defib_jolt"
 $declaresequence "coach_AimMatrix_chainsaw_Standing_layer"
 $declaresequence "coach_AimMatrix_chainsaw_Standing_arms"
 $declaresequence "Idle_Standing_chainsaw"

@@ -1,3 +1,6 @@
+
+$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
+
 $declaresequence "Idle_Standing_Align"
 $declaresequence "Idlenoise"
 $declaresequence "InjuredIdlenoise"
@@ -819,6 +822,7 @@ $declaresequence "Shoved_Backward_chainsaw"
 $declaresequence "Shoved_Forward_chainsaw"
 $declaresequence "Shoved_Rightward_chainsaw"
 $declaresequence "Shoved_Leftward_chainsaw"
+
 $declaresequence "namvet_gesture_overhereinDelta"
 $declaresequence "namvet_gesture_overhereinFrameArms"
 $declaresequence "namvet_gesture_overhereinFrameSpine"

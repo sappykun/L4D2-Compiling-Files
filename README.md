@@ -2,6 +2,8 @@
 
 Boilerplate for L4D2 models I use. Not entirely production ready yet.
 
+TODO: Get someone to review this.
+
 | Survivor  | Status |
 | --- | --- |
 | Nick | DONE |
@@ -10,5 +12,5 @@ Boilerplate for L4D2 models I use. Not entirely production ready yet.
 | Ellis  | DONE |
 | Bill  | DONE |
 | Zoey  | DONE |
-| Francis  | TODO - make compatible with XDR by default |
-| Louis | TODO - make compatible with XDR by default |
+| Francis  | DONE |
+| Louis | DONE |

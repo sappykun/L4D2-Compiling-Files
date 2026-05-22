@@ -5,7 +5,7 @@ $modelname "xdreanims/$xdreanim_survivor$_slot_048.mdl"
 
 $include "l4d2_survivor_boilerplate/macro_animadjustment.qci"
 
-$include "l4d2_survivor_boilerplate/$xdreanim_survivor$/$xdreanim_survivor$_bone_extra.qci"
-$include "l4d2_survivor_boilerplate/$xdreanim_survivor$/$xdreanim_survivor$_bone.qci"
-$include "l4d2_survivor_boilerplate/$xdreanim_survivor$/$xdreanim_survivor$_animation.qci"
-$include "l4d2_survivor_boilerplate/$xdreanim_survivor$/$xdreanim_survivor$_adjust.qci"
+$include "l4d2_survivor_boilerplate/$xdreanim_survivor$/bone_extra.qci"
+$include "l4d2_survivor_boilerplate/$xdreanim_survivor$/bone.qci"
+$include "l4d2_survivor_boilerplate/$xdreanim_survivor$/animation.qci"
+$include "l4d2_survivor_boilerplate/$xdreanim_survivor$/declaresequence_adjust.qci"

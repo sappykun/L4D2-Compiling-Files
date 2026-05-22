@@ -3,9 +3,7 @@ $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/ellis/bone.qci"
 
-$sequence "mechanic" $correctiveAnimation$ fps 30
-$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
-
+$sequence "mechanic" $correctiveAnimation$ fps 30.00
 $include l4d2_survivor_boilerplate/ellis/$declareSequenceFile$
 
 $includemodel "survivors/anim_mechanic.mdl"

@@ -3,6 +3,7 @@ $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/louis/bone.qci"
 
+$sequence "manager" $correctiveAnimation$ fps 30.00
 $include l4d2_survivor_boilerplate/louis/$declareSequenceFile$
 
 $includemodel "survivors/anim_NamVet.mdl"

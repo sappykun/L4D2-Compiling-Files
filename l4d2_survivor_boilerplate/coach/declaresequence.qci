@@ -1,3 +1,6 @@
+
+$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
+
 $declaresequence "Idle_Standing_Align"
 $declaresequence "raw_coach_walkSE_rifle"
 $declaresequence "Idlenoise"
