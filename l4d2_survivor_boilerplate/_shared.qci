@@ -1,6 +1,10 @@
-$include "l4d2_survivor_boilerplate/_macro_animadjustment.qci"
 
-$unlockdefinebones
+$definevariable R_Foot_IK_Bone "ValveBiped.Bip01_R_Foot"
+$definevariable L_Foot_IK_Bone "ValveBiped.Bip01_L_Foot"
+$definevariable R_Foot_IK_Strength 1.0
+$definevariable L_Foot_IK_Strength 1.0
+
+$include "l4d2_survivor_boilerplate/_macro_animadjustment.qci"
 
 $poseparameter "body_pitch" -90 90 loop 360
 $poseparameter "body_yaw" -90 90 loop 360
@@ -23,3 +27,14 @@ $attachment "legR" "ValveBiped.Bip01_R_Thigh" 0 0 0 rotate 0 0 0
 // Changing the values does nothing, but the attachment must exist for the tongue model to show up
 $attachment "spine" "ValveBiped.Bip01_Spine" 0 0 0 rotate -90 -90 0
 
+// TODO: Only 3 out of 8 survivors have the ikclip rule. Is it needed?
+$ikchain "rhand" "ValveBiped.Bip01_R_Hand" knee 0.707 0.707 0
+$ikchain "lhand" "ValveBiped.Bip01_L_Hand" knee 0.707 0.707 0
+$ikchain "rfoot" $R_Foot_IK_Bone$ knee 0.707 -0.707 0
+$ikchain "lfoot" $L_Foot_IK_Bone$ knee 0.707 -0.707 0
+$ikchain "ikclip" "ValveBiped.weapon_bone_Clip" knee 0.707 -0.707 0
+
+$ikautoplaylock "rfoot" $R_Foot_IK_Strength$ 0.1
+$ikautoplaylock "lfoot" $L_Foot_IK_Strength$ 0.1
+$ikautoplaylock "rhand" 0.1 0.01
+$ikautoplaylock "lhand" 0.1 0.01

@@ -1,4 +1,8 @@
 
+$definemacro AddWeaponBoneDefinitions \\
+$definebone "ValveBiped.weapon_bone" "ValveBiped.Bip01_R_Hand" 2.856895 -1.536198 -0.9738 -15.616425 -90.427695 -86.009389 0 0 0 0 0 0 \\
+$definebone "ValveBiped.L_weapon_bone" "ValveBiped.Bip01_L_Hand" 2.856897 -1.536201 -0.9738 -15.616425 -90.427695 -86.009389 0 0 0 0 0 0 \\
+
 $definebone "ValveBiped.Bip01_Pelvis" "" 0 0.516773 38.317692 0 0 90.000009 0 0 0 0 0 0
 $definebone "ValveBiped.Bip01_L_Thigh" "ValveBiped.Bip01_Pelvis" 3.625659 0 0 1.336217 -86.849468 -95.702835 0 0 0 0 0 0
 $definebone "ValveBiped.Bip01_L_Calf" "ValveBiped.Bip01_L_Thigh" 18.345819 0 0 0 2 0 0 0 0 0 0 0

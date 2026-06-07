@@ -1,0 +1,63 @@
+
+$animation "@dlc1_intro_zoey_shrug_corrective_animation" "l4d2_survivor_boilerplate/zoey/anim_light/@dlc1_intro_zoey_shrug_corrective_animation.smd"
+$animation "@dlc1_intro_zoey_shout_corrective_animation" "l4d2_survivor_boilerplate/zoey/anim_light/@dlc1_intro_zoey_shout_corrective_animation.smd"
+$animation "@dlc1_intro_zoey_headshake_corrective_animation" "l4d2_survivor_boilerplate/zoey/anim_light/@dlc1_intro_zoey_headshake_corrective_animation.smd"
+$animation "@dlc1_intro_zoey_handflipR_corrective_animation" "l4d2_survivor_boilerplate/zoey/anim_light/@dlc1_intro_zoey_handflipR_corrective_animation.smd" 
+$animation "@dlc1_intro_zoey_head_gesture_corrective_animation" "l4d2_survivor_boilerplate/zoey/anim_light/@dlc1_intro_zoey_head_gesture_corrective_animation.smd"
+$animation "@dlc1_intro_zoey_generator_point_corrective_animation" "l4d2_survivor_boilerplate/zoey/anim_light/@dlc1_intro_zoey_generator_point_corrective_animation.smd"
+
+$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
+
+$sequence "dlc1_intro_zoey_idle" {
+	"l4d2_survivor_boilerplate/zoey/anim_light/dlc1_intro_zoey_idle.smd"
+	fps 30
+	loop
+}
+
+$sequence "dlc1_intro_zoey_shrug" {
+	"l4d2_survivor_boilerplate/zoey/anim_light/dlc1_intro_zoey_shrug.smd" 
+	activity "ACT_DLCINTRO_ZOEY_01" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_zoey_shrug_corrective_animation" 0
+}
+
+$sequence "dlc1_intro_zoey_shout"{
+	"l4d2_survivor_boilerplate/zoey/anim_light/dlc1_intro_zoey_shout.smd"
+	activity "ACT_DLCINTRO_ZOEY_02" -1 
+	fps 30
+	delta
+	subtract "@dlc1_intro_zoey_shout_corrective_animation" 0
+}
+
+$sequence "dlc1_intro_zoey_headshake" {
+	"l4d2_survivor_boilerplate/zoey/anim_light/dlc1_intro_zoey_headshake.smd"
+	activity "ACT_DLCINTRO_ZOEY_03" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_zoey_headshake_corrective_animation" 0
+}
+
+$sequence "dlc1_intro_zoey_handflipR" {
+	"l4d2_survivor_boilerplate/zoey/anim_light/dlc1_intro_zoey_handflipR.smd"
+	activity "ACT_DLCINTRO_ZOEY_04" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_zoey_handflipR_corrective_animation" 0
+}
+
+$sequence "dlc1_intro_zoey_head_gesture" {
+	"l4d2_survivor_boilerplate/zoey/anim_light/dlc1_intro_zoey_head_gesture.smd"
+	activity "ACT_DLCINTRO_ZOEY_05" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_zoey_head_gesture_corrective_animation" 0
+}
+
+$sequence "dlc1_intro_zoey_generator_point" {
+	"l4d2_survivor_boilerplate/zoey/anim_light/dlc1_intro_zoey_generator_point.smd"
+	activity "ACT_DLCINTRO_ZOEY_06" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_zoey_generator_point_corrective_animation" 0
+}

@@ -1,0 +1,31 @@
+
+$definevariable desiredModelScale 1.0
+$definevariable R_Foot_IK_Bone "ValveBiped.Bip01_R_Foot"
+$definevariable L_Foot_IK_Bone "ValveBiped.Bip01_L_Foot"
+$definevariable R_Foot_IK_Strength 1.0
+$definevariable L_Foot_IK_Strength 1.0
+
+$include "gmod_boilerplate/female/bone.qci"
+
+$ikchain "rhand" "ValveBiped.Bip01_R_Hand" knee 0.707 0.707 0
+$ikchain "lhand" "ValveBiped.Bip01_L_Hand" knee 0.707 0.707 0
+$ikchain "rfoot" $R_Foot_IK_Bone$ knee 0.707 -0.707 0
+$ikchain "lfoot" $L_Foot_IK_Bone$ knee 0.707 -0.707 0
+
+$ikautoplaylock "rfoot" $R_Foot_IK_Strength$ 0.1
+$ikautoplaylock "lfoot" $L_Foot_IK_Strength$ 0.1
+$ikautoplaylock "rhand" .1 .01
+$ikautoplaylock "lhand" .1 .01
+
+$declaresequence "reference" // avoid broken spawnicon
+
+$sequence "proportions_base" $correctiveAnimation$ { fadein 0.2 fadeout 0.2 fps 1 }
+
+$sequence "ragdoll" $correctiveAnimation$ { activity ACT_DIERAGDOLL 1 }
+
+$AddIncludeModels
+
+$scale $desiredModelScale$
+
+$animation "a_proportions" $baseAnimation$ subtract "proportions_base" 0
+$sequence "proportions" "a_proportions" predelta autoplay

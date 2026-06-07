@@ -1,0 +1,5 @@
+
+$definemacro AddIncludeModels \\
+$includemodel "f_anm.mdl" \\
+
+$include "gmod_boilerplate/female/animation.qci"

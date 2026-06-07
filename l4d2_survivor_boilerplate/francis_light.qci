@@ -1,0 +1,15 @@
+
+$definevariable desiredModelScale 1.0
+
+$include "l4d2_survivor_boilerplate/francis/bone.qci"
+
+$sequence "biker" $correctiveAnimation$ fps 30.00
+
+$include "l4d2_survivor_boilerplate/francis/animation_light.qci"
+
+$scale $desiredModelScale$
+
+$animation a_proportions $baseAnimation$ subtract "biker" 0
+$sequence proportions a_proportions predelta autoplay
+
+$include "l4d2_survivor_boilerplate/_shared.qci"

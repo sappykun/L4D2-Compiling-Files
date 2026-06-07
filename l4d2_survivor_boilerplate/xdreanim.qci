@@ -1,12 +1,11 @@
 
-$definevariable xdreanimSurvivor "bill"
 $definevariable correctiveAnimation l4d2_survivor_boilerplate/$xdreanimSurvivor$/anim/ragdoll.smd
 
 $modelname xdreanims/$xdreanimSurvivor$_slot_048.mdl
 
 $include "l4d2_survivor_boilerplate/_macro_animadjustment.qci"
 
-$include l4d2_survivor_boilerplate/$xdreanimSurvivor$/bone_extra.qci
 $include l4d2_survivor_boilerplate/$xdreanimSurvivor$/bone.qci
+$include l4d2_survivor_boilerplate/$xdreanimSurvivor$/bone_extra.qci
 $include l4d2_survivor_boilerplate/$xdreanimSurvivor$/animation.qci
 $include l4d2_survivor_boilerplate/$xdreanimSurvivor$/declaresequence_adjust.qci

@@ -1,0 +1,64 @@
+
+$animation "@dlc1_intro_male_leanup_corrective_animation" "l4d2_survivor_boilerplate/francis/anim_light/@dlc1_intro_male_leanup_corrective_animation.smd"
+$animation "@dlc1_intro_male_leanleft_corrective_animation" "l4d2_survivor_boilerplate/francis/anim_light/@dlc1_intro_male_leanleft_corrective_animation.smd"
+$animation "@dlc1_intro_male_headnod_corrective_animation" "l4d2_survivor_boilerplate/francis/anim_light/@dlc1_intro_male_headnod_corrective_animation.smd"
+$animation "@dlc1_intro_male_handflipR_corrective_animation" "l4d2_survivor_boilerplate/francis/anim_light/@dlc1_intro_male_handflipR_corrective_animation.smd" 
+$animation "@INTROIDLENOISE_corrective_animation" "l4d2_survivor_boilerplate/francis/anim_light/@INTROIDLENOISE_corrective_animation.smd"
+
+$sequence "animHack" {
+	"l4d2_survivor_boilerplate/francis/anim_light/animHack.smd"
+	fps 30
+	hidden
+}
+
+$sequence "dlc1_intro_male_idle" {
+	"l4d2_survivor_boilerplate/francis/anim_light/dlc1_intro_male_idle.smd"
+	addlayer "INTROIDLENOISE"
+	fps 30
+	loop
+}
+
+$sequence "dlc1_intro_male_leanup"{
+	"l4d2_survivor_boilerplate/francis/anim_light/dlc1_intro_male_leanup.smd"
+	activity "ACT_DLCINTRO_01" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_male_leanup_corrective_animation" 0
+}
+
+$sequence "dlc1_intro_male_leanleft" {
+	"l4d2_survivor_boilerplate/francis/anim_light/dlc1_intro_male_leanleft.smd"
+	activity "ACT_DLCINTRO_02" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_male_leanleft_corrective_animation" 0
+}
+
+$sequence "dlc1_intro_male_headnod" {
+	"l4d2_survivor_boilerplate/francis/anim_light/dlc1_intro_male_headnod.smd"
+	activity "ACT_DLCINTRO_03" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_male_handflipR_corrective_animation" 0
+}
+
+$sequence "dlc1_intro_male_handflipR" {
+	"l4d2_survivor_boilerplate/francis/anim_light/dlc1_intro_male_handflipR.smd"
+	activity "ACT_DLCINTRO_04" -1
+	fps 30
+	delta
+	subtract "@dlc1_intro_male_handflipR_corrective_animation" 0
+}
+
+$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
+
+$sequence "INTROIDLENOISE" {
+	"l4d2_survivor_boilerplate/francis/anim_light/INTROIDLENOISE.smd"
+	activity "ACT_DLCINTRO_ZOEY_06" -1
+	fps 30
+	delta
+	subtract "@INTROIDLENOISE_corrective_animation" 0
+	hidden
+	loop
+	walkframe 242
+}

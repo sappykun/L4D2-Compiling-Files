@@ -1,0 +1,15 @@
+
+$definevariable desiredModelScale 1.0
+
+$include "l4d2_survivor_boilerplate/zoey/bone.qci"
+
+$sequence "teenangst" $correctiveAnimation$ fps 30.00
+
+$include "l4d2_survivor_boilerplate/zoey/animation_light.qci"
+
+$scale $desiredModelScale$
+
+$animation a_proportions $baseAnimation$ subtract "teenangst" 0
+$sequence proportions a_proportions predelta autoplay
+
+$include "l4d2_survivor_boilerplate/_shared.qci"

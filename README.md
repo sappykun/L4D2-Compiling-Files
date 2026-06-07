@@ -1,18 +1,16 @@
 # L4D2 Compiling Files
 
-Boilerplate for L4D2 models I use. Not entirely production ready yet.
+Boilerplate for L4D2 models I use. Not entirely production ready yet, but it's pretty damn close.
+Also includes Gmod playermodel boilerplate, because why not.
 
-TODO: Get someone to review this.
+Supports all survivors, plus the "light" models for Francis and Zoey.
 
-TODO: Compiling XDReanim models produces "missmatched" parent bone errors in-game, at least with Zoey. Harmless, but look into a proper fix.
+## TODO
 
-| Survivor  | Status |
-| --- | --- |
-| Nick | DONE |
-| Rochelle  | DONE |
-| Coach  | DONE |
-| Ellis  | DONE |
-| Bill  | DONE |
-| Zoey  | DONE |
-| Francis  | DONE |
-| Louis | DONE |
+Add something for Bill's death pose.
+
+Add the male Gmod playermodel boilerplate.
+
+Get someone to review this.
+
+~~Compiling XDReanim models produces "missmatched" parent bone errors in-game, at least with Zoey. Harmless, but look into a proper fix.~~ Fixed, parent bones need to be defined before children.

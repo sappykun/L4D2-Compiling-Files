@@ -1,0 +1,8 @@
+
+$definemacro AddIncludeModels \\
+$includemodel "humans/female_shared.mdl" \\
+$includemodel "humans/female_ss.mdl" \\
+$includemodel "humans/female_gestures.mdl" \\
+$includemodel "humans/female_postures.mdl" \\
+
+$include "gmod_boilerplate/female/animation.qci"

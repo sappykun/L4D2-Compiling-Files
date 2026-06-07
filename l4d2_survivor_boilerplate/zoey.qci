@@ -1,4 +1,6 @@
 
+$definevariable desiredModelScale 1.0
+
 $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/zoey/bone.qci"
@@ -8,6 +10,8 @@ $include l4d2_survivor_boilerplate/zoey/$declareSequenceFile$
 
 $includemodel "survivors/anim_teenangst.mdl"
 $includemodel "survivors/gestures_teenangst.mdl"
+
+$scale $desiredModelScale$
 
 $animation a_proportions $baseAnimation$ subtract "teenangst" 0
 $sequence proportions a_proportions predelta autoplay

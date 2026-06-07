@@ -1,4 +1,6 @@
 
+$definevariable desiredModelScale 1.0
+
 $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/louis/bone.qci"
@@ -6,10 +8,12 @@ $include "l4d2_survivor_boilerplate/louis/bone.qci"
 $sequence "manager" $correctiveAnimation$ fps 30.00
 $include l4d2_survivor_boilerplate/louis/$declareSequenceFile$
 
-$includemodel "survivors/anim_NamVet.mdl"
-$includemodel "survivors/gestures_namvet.mdl"
+$includemodel "survivors/anim_biker.mdl"
+$includemodel "survivors/gestures_biker.mdl"
 
-$animation a_proportions $baseAnimation$ subtract "NamVet" 0
+$scale $desiredModelScale$
+
+$animation a_proportions $baseAnimation$ subtract "manager" 0
 $sequence proportions a_proportions predelta autoplay
 
 $include "l4d2_survivor_boilerplate/_shared.qci"

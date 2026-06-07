@@ -21,7 +21,3 @@ $definebone "ValveBiped.hlp_jacket_arm_back_R" "ValveBiped.Bip01_R_Clavicle" 7.6
 $definebone "ValveBiped.hlp_jacket_armpit_R" "ValveBiped.Bip01_Spine2" 4.902687 0.655644 -8.954903 0.22288 0.009139 4.694948 0 0 0 0 0 0
 $definebone "ValveBiped.jiggy_jacket_right" "ValveBiped.Bip01_Spine" 2.64967 8.412623 -3.003099 -63.666133 107.998289 -104.786583 0 0 0 0 0 0
 $definebone "ValveBiped.jiggy_jacket_left" "ValveBiped.Bip01_Spine" 2.538502 8.321048 3.447679 -61.873939 -87.220498 88.028653 0 0 0 0 0 0
-
-$definemacro AddWeaponBoneDefinitions \\
-$definebone "ValveBiped.weapon_bone" "ValveBiped.Bip01_R_Hand" 2.856899 -1.536194 -0.9738 -15.61642 -90.427695 -86.009389 0 0 0 0 0 0 \\
-$definebone "ValveBiped.L_weapon_bone" "ValveBiped.Bip01_L_Hand" 3.349001 -1.370995 0.724999 -5.043001 89.255 113.321998 0 0 0 0 0 0 \\

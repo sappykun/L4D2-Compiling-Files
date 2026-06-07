@@ -10,7 +10,3 @@ $definebone "ValveBiped.Bip01_L_Elbow" "ValveBiped.Bip01_L_UpperArm" 10.622513 0
 $definebone "ValveBiped.Bip01_R_Wrist" "ValveBiped.Bip01_R_Forearm" 10.703915 0 -0.000004 0.000002 0.000002 13.903743 0 0 0 0 0 0
 $definebone "ValveBiped.Bip01_R_Ulna" "ValveBiped.Bip01_R_Forearm" 5.351955 0 0 0.000002 0.000002 7.369188 0 0 0 0 0 0
 $definebone "ValveBiped.Bip01_R_Elbow" "ValveBiped.Bip01_R_UpperArm" 10.622509 0 0 0.000007 -9.262281 0.000001 0 0 0 0 0 0
-
-$definemacro AddWeaponBoneDefinitions \\
-$definebone "ValveBiped.L_weapon_bone" "ValveBiped.Bip01_L_Hand" 3.349 -1.371002 0.724999 -5.043001 89.255 113.321998 0 0 0 0 0 0 \\
-$definebone "ValveBiped.weapon_bone" "ValveBiped.Bip01_R_Hand" 2.856895 -1.536201 -0.973799 -15.616425 -90.427702 -86.009389 0 0 0 0 0 0 \\

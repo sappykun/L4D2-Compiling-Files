@@ -1,4 +1,6 @@
 
+$definevariable desiredModelScale 1.0
+
 $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/coach/bone.qci"
@@ -8,6 +10,8 @@ $include l4d2_survivor_boilerplate/coach/$declareSequenceFile$
 
 $includemodel "survivors/anim_coach.mdl"
 $includemodel "survivors/gestures_coach.mdl"
+
+$scale $desiredModelScale$
 
 $animation a_proportions $baseAnimation$ subtract "coach" 0
 $sequence proportions a_proportions predelta autoplay
