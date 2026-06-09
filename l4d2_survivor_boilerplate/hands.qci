@@ -1,0 +1,11 @@
+
+$definevariable handsSurvivor "bill"
+
+$surfaceprop "default"
+$contents "solid"
+$illumposition 0 0 -31
+
+$include l4d2_survivor_boilerplate/$handsSurvivor$/hands.qci
+
+$sequence "idle" l4d2_survivor_boilerplate/$handsSurvivor$/anim/hands_idle.smd fps 30
+
