@@ -53,6 +53,8 @@ $definebone "ValveBiped.Bip01_R_Finger0" "ValveBiped.Bip01_R_Hand" 1.258947 -0.3
 $definebone "ValveBiped.Bip01_R_Finger01" "ValveBiped.Bip01_R_Finger0" 1.393003 0.000004 -0.000002 -0.115952 -2.497446 0.000022 0 0 0 0 0 0
 $definebone "ValveBiped.Bip01_R_Finger02" "ValveBiped.Bip01_R_Finger01" 1.100004 0.000002 0.000002 -0.75221 -16.433244 0.000022 0 0 0 0 0 0
 
+$definebone "ValveBiped.forward" "ValveBiped.Bip01_Head1" 0 0 0 0 -76 -90.000003 0 0 0 0 0 0
+
 $bonemerge "ValveBiped.Bip01_Pelvis"
 $bonemerge "ValveBiped.Bip01_Spine"
 $bonemerge "ValveBiped.Bip01_Spine1"
@@ -62,4 +64,3 @@ $bonemerge "ValveBiped.Bip01_R_Clavicle"
 $bonemerge "ValveBiped.Bip01_R_UpperArm"
 $bonemerge "ValveBiped.Bip01_R_Forearm"
 $bonemerge "ValveBiped.Bip01_R_Hand"
-$bonemerge "ValveBiped.Anim_Attachment_RH"
