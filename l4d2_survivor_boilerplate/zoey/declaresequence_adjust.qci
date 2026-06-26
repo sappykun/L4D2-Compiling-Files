@@ -1,5 +1,5 @@
 
-$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30
+$sequence "ragdoll" $correctiveAnimation$ activity "ACT_DIERAGDOLL" 1 fps 30 scale $smallProportionBaseScale$
 
 $declaresequence "Idle_Standing_Align"
 $declaresequence "Idlenoise"
@@ -535,6 +535,7 @@ $sequence "Idle_Incap_Pistol" {
 	addlayer "NamVet_AimMatrix_Pistol_Incap"
 	fps 50
 	loop
+	scale $smallProportionBaseScale$
 }
 
 
@@ -548,6 +549,7 @@ $sequence "Idle_Incap_Elites" {
 	addlayer "NamVet_AimMatrix_Elites_Incap"
 	fps 50
 	loop
+	scale $smallProportionBaseScale$
 }
 
 
@@ -563,6 +565,7 @@ $sequence "incap_crawl" {
 	fps 20
 	loop
 	walkframe 21 LX LY
+	scale $smallProportionBaseScale$
 }
 
 $declaresequence "incap_drag_front"
@@ -581,6 +584,7 @@ $sequence "Idle_Incap_Pounced" {
 	fadeout 0.2
 	fps 30
 	loop
+	scale $smallProportionBaseScale$
 }
 
 
@@ -605,6 +609,7 @@ $sequence "Idle_Incap_Hanging1" {
 	fadeout 0.2
 	fps 30
 	loop
+	scale $smallProportionBaseScale$
 }
 
 
@@ -616,6 +621,7 @@ $sequence "Idle_Incap_Hanging2" {
 	fadeout 0.2
 	fps 30
 	loop
+	scale $smallProportionBaseScale$
 }
 
 
@@ -627,6 +633,7 @@ $sequence "Idle_Incap_Hanging3" {
 	fadeout 0.2
 	fps 30
 	loop
+	scale $smallProportionBaseScale$
 }
 
 
@@ -896,6 +903,7 @@ $sequence "Die_Standing" {
 	fadeout 0.2
 	fps 30
 	walkframe 28 LX LY
+	scale $smallProportionBaseScale$
 }
 
 //$declaresequence "Die_Incap"
@@ -905,6 +913,7 @@ $sequence "Die_Incap" {
 	fadein 0.2
 	fadeout 0.2
 	fps 30
+	scale $smallProportionBaseScale$
 }
 
 
@@ -917,6 +926,7 @@ $sequence "Defib_jolt" {
 	fadein 0.2
 	fadeout 0.2
 	fps 30
+	scale $smallProportionBaseScale$
 }
 
 

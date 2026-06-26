@@ -12,7 +12,7 @@ $declaresequence "francis_AimMatrix_Rifle_Running"
 $declaresequence "Run_Rifle"
 $declaresequence "idle_axe_mdl"
 
-$sequence "ragdoll" $correctiveAnimation$ ACT_DIERAGDOLL 1 fps 30.00
+$sequence "ragdoll" $correctiveAnimation$ ACT_DIERAGDOLL 1 fps 30.00 scale $smallProportionBaseScale$
 
 $declaresequence "InjuredIdlenoise"
 $declaresequence "CalmIdlenoise"

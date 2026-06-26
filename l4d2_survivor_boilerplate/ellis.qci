@@ -1,17 +1,37 @@
 
 $definevariable desiredModelScale 1.0
+$definevariable smallProportionBaseScale 1.0
+
+$definemacro boilerplateIncludeModels \\
+$includemodel "survivors/anim_mechanic.mdl" \\
+$includemodel "survivors/gestures_mechanic.mdl" \\
 
 $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/ellis/bone.qci"
 
-$sequence "mechanic" $correctiveAnimation$ fps 30.00
+$sequence "mechanic" $correctiveAnimation$ fps 30.00 scale $smallProportionBaseScale$
 $include l4d2_survivor_boilerplate/ellis/$declareSequenceFile$
 
-$includemodel "survivors/anim_mechanic.mdl"
-$includemodel "survivors/gestures_mechanic.mdl"
+$boilerplateIncludeModels
 
 $scale $desiredModelScale$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $animation a_proportions $baseAnimation$ subtract "mechanic" 0
 $sequence proportions a_proportions predelta autoplay

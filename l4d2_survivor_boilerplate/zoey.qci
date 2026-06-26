@@ -1,17 +1,37 @@
 
 $definevariable desiredModelScale 1.0
+$definevariable smallProportionBaseScale 1.0
+
+$definemacro boilerplateIncludeModels \\
+$includemodel "survivors/anim_teenangst.mdl" \\
+$includemodel "survivors/gestures_teenangst.mdl" \\
 
 $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/zoey/bone.qci"
 
-$sequence "teenangst" $correctiveAnimation$ fps 30.00
+$sequence "teenangst" $correctiveAnimation$ fps 30.00 scale $smallProportionBaseScale$
 $include l4d2_survivor_boilerplate/zoey/$declareSequenceFile$
 
-$includemodel "survivors/anim_teenangst.mdl"
-$includemodel "survivors/gestures_teenangst.mdl"
+$boilerplateIncludeModels
 
 $scale $desiredModelScale$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $animation a_proportions $baseAnimation$ subtract "teenangst" 0
 $sequence proportions a_proportions predelta autoplay

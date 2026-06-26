@@ -1,17 +1,37 @@
 
 $definevariable desiredModelScale 1.0
+$definevariable smallProportionBaseScale 1.0
+
+$definemacro boilerplateIncludeModels \\
+$includemodel "survivors/anim_gambler.mdl" \\
+$includemodel "survivors/gestures_gambler.mdl" \\
 
 $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/nick/bone.qci"
 
-$sequence "gambler" $correctiveAnimation$ fps 30.00
+$sequence "gambler" $correctiveAnimation$ fps 30.00 scale $smallProportionBaseScale$
 $include l4d2_survivor_boilerplate/nick/$declareSequenceFile$
 
-$includemodel "survivors/anim_gambler.mdl"
-$includemodel "survivors/gestures_gambler.mdl"
+$boilerplateIncludeModels
 
 $scale $desiredModelScale$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $animation a_proportions $baseAnimation$ subtract "gambler" 0
 $sequence proportions a_proportions predelta autoplay

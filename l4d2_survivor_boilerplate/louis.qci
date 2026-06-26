@@ -1,19 +1,39 @@
 
 $definevariable desiredModelScale 1.0
+$definevariable smallProportionBaseScale 1.0
+
+$definemacro boilerplateIncludeModels \\
+$includemodel "survivors/anim_biker.mdl" \\
+$includemodel "survivors/gestures_biker.mdl" \\
 
 $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/louis/bone.qci"
 
-$sequence "manager" $correctiveAnimation$ fps 30.00
+$sequence "manager" $correctiveAnimation$ fps 30.00 scale $smallProportionBaseScale$
 $include l4d2_survivor_boilerplate/louis/$declareSequenceFile$
 
-$includemodel "survivors/anim_biker.mdl"
-$includemodel "survivors/gestures_biker.mdl"
+$boilerplateIncludeModels
 
 $scale $desiredModelScale$
 
+// Louis uses Francis's animations with a slightly different weightlist, so the
+// weapon_bone_clip bone also gets affected by the proportions trick.
+// We need to set the weights to 0 for those bones in particular.
+$weightlist "weights_proportions" {
+	"ValveBiped.Bip01_Pelvis"				1.0
+	"ValveBiped.weapon_bone_Clip"			0.0
+	"ValveBiped.weapon_bone_extra"			0.0
+	"ValveBiped.weapon_bone_Clip2"			0.0
+	"ValveBiped.weapon_bone_Clip2_Bullets"	0.0
+	"ValveBiped.weapon_bolt_l"				0.0
+	"ValveBiped.weapon_bone_Clip_Bullets"	0.0
+	"ValveBiped.weapon_bolt"				0.0
+	"ValveBiped.weapon_bolt_opposite"		0.0
+	"ValveBiped.weapon_charger"				0.0
+}
+
 $animation a_proportions $baseAnimation$ subtract "manager" 0
-$sequence proportions a_proportions predelta autoplay
+$sequence proportions a_proportions predelta autoplay weightlist weights_proportions
 
 $include "l4d2_survivor_boilerplate/_shared.qci"

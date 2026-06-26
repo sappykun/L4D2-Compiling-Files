@@ -1,19 +1,39 @@
 
 $definevariable desiredModelScale 1.0
+$definevariable smallProportionBaseScale 1.0
+
+$definemacro boilerplateIncludeModels \\
+$includemodel "survivors/anim_biker.mdl" \\
+$includemodel "survivors/gestures_biker.mdl" \\
 
 $definevariable declareSequenceFile declaresequence.qci
 
 $include "l4d2_survivor_boilerplate/francis/bone.qci"
 
-$sequence "biker" $correctiveAnimation$ fps 30.00
+$sequence "biker" $correctiveAnimation$ fps 30.00 scale $smallProportionBaseScale$
 $include l4d2_survivor_boilerplate/francis/$declareSequenceFile$
 
-$includemodel "survivors/anim_biker.mdl"
-$includemodel "survivors/gestures_biker.mdl"
+$boilerplateIncludeModels
 
 $scale $desiredModelScale$
 
-$animation a_proportions $baseAnimation$ subtract "Biker" 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$animation a_proportions $baseAnimation$ subtract "biker" 0
 $sequence proportions a_proportions predelta autoplay
 
 $include "l4d2_survivor_boilerplate/_shared.qci"
