@@ -9,9 +9,13 @@
 		$smallProportionBaseScale$ is specifically for use if your model uses the Small Proportions Base animations.
 		$X_Foot_IK_Bone$ lets you change the bone used by the IK system for walking, in case the default foot bone is too low or high. You'll probably need to set up procedural bones on the actual foot bones if you change this.
 		$X_Foot_IK_Strength$ lets you enable or disable the IK system for feet entirely. This has no effect in L4D2 (it does in Gmod). Could probably remove it here.
+
+		$AddWeaponBoneDefinitions lets you adjust the weapon bones. The left bone is used for two-handed melee weapons like the fire axe, while the other is used for holding guns in the right hand.
+		Note: the left pistol attaches to the Bip01_L_Hand bone directly, so you can't adjust the position. This unfortunately cannot be changed without modifying animations.
+		$boilerplateIncludeModels lets you change the animation files your model references. The default value depends on the boilerplate you've selected.
 */
 
-// These 
+// These are mandatory and will be what you exported from Blender
 
 $definevariable baseAnimation "anims/exampleRig.dmx"
 $definevariable correctiveAnimation "anims/biker_reference_wrinkle_skeleton.dmx"
@@ -26,10 +30,17 @@ $definevariable correctiveAnimation "anims/biker_reference_wrinkle_skeleton.dmx"
 
 // Weapons attach to these bones, adjusting these will fix misalignments when holding guns.
 // These are in a macro since $definebones must be defined in a particular order.
+// Can be omitted.
 
 $definemacro AddWeaponBoneDefinitions \\
 $definebone "ValveBiped.L_weapon_bone" "ValveBiped.Bip01_L_Hand" 1.5 -0.5 0 -5 92 118 0 0 0 0 0 0 \\
 $definebone "ValveBiped.weapon_bone" "ValveBiped.Bip01_R_Hand" 1 -1.25 -0.5 -22 -92 -85 0 0 0 0 0 0 \\
+
+// This can be left as-is unless you're including special non-vanilla animations, like the ones from SmallProportionsBase
+
+// $definemacro boilerplateIncludeModels \\
+// $includemodel "survivors/anim_biker.mdl" \\
+// $includemodel "survivors/gestures_biker.mdl" \\
 
 // Definebones for your custom model. You only need to specify the bones that will be influenced
 // by animation, like spine, leg, and arm bones.
