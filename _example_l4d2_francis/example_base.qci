@@ -1,0 +1,78 @@
+
+/*
+	Required:
+		$baseAnimation$ is the armature of your model in its rest pose.
+		$correctiveAnimation$ is the armature of the survivor you're replacing, posed to match the angles of the custom model.
+		Both of these are used for the proportions delta animation trick.
+	Optional:
+		$desiredModelScale$ lets you change the scale of your custom model. Hitboxes and collision will be affected, but eyeball paramaters will need to be multiplied manually unless you use an alternate compiler.
+		$smallProportionBaseScale$ is specifically for use if your model uses the Small Proportions Base animations.
+		$X_Foot_IK_Bone$ lets you change the bone used by the IK system for walking, in case the default foot bone is too low or high. You'll probably need to set up procedural bones on the actual foot bones if you change this.
+		$X_Foot_IK_Strength$ lets you enable or disable the IK system for feet entirely. This has no effect in L4D2 (it does in Gmod). Could probably remove it here.
+*/
+
+// These 
+
+$definevariable baseAnimation "anims/exampleRig.dmx"
+$definevariable correctiveAnimation "anims/biker_reference_wrinkle_skeleton.dmx"
+
+// These can be commented/left out if the values are default
+
+//$definevariable desiredModelScale 1.0
+//$definevariable R_Foot_IK_Bone "ValveBiped.Bip01_R_Foot"
+//$definevariable L_Foot_IK_Bone "ValveBiped.Bip01_L_Foot"
+//$definevariable R_Foot_IK_Strength 1.0
+//$definevariable L_Foot_IK_Strength 1.0
+
+// Weapons attach to these bones, adjusting these will fix misalignments when holding guns.
+// These are in a macro since $definebones must be defined in a particular order.
+
+$definemacro AddWeaponBoneDefinitions \\
+$definebone "ValveBiped.L_weapon_bone" "ValveBiped.Bip01_L_Hand" 1.5 -0.5 0 -5 92 118 0 0 0 0 0 0 \\
+$definebone "ValveBiped.weapon_bone" "ValveBiped.Bip01_R_Hand" 1 -1.25 -0.5 -22 -92 -85 0 0 0 0 0 0 \\
+
+// Definebones for your custom model. You only need to specify the bones that will be influenced
+// by animation, like spine, leg, and arm bones.
+// You can replace this with $unlockdefinebones, but that will prevent you from being able to adjust
+// the weapon_bone offsets with the macro above.
+
+$include "example_definebones.qci"
+//$unlockdefinebones
+
+// Run the specified boilerplate file from whichever QC file you're compiling
+$include $boilerplate$
+
+// Used for displaying held items on the survivor model, adjust as necessary
+$attachment "pistol" "ValveBiped.Bip01_Pelvis" -3.00 4.00 1.00 rotate -90 -130 0
+$attachment "pills" "ValveBiped.Bip01_Pelvis" 9.00 6.00 1.00 rotate -0 -150 80
+$attachment "molotov" "ValveBiped.Bip01_Pelvis" 2.00 4.00 1.00 rotate 20 30 -85
+$attachment "melee" "ValveBiped.Bip01_Spine4" 2.00 -5.00 4.00 rotate 40 165 80
+$attachment "primary" "ValveBiped.Bip01_Spine4" 0.00 -3.50 -4.70 rotate -50 -170 150
+$attachment "medkit" "ValveBiped.Bip01_Spine2" 3.00 -5.00 -1.00 rotate 0 90 90
+
+// Used for spawning the bandage trails that go around the arms/legs. Only Zoey uses legR_B.
+// These must be on a dedicated attachment bone, they don't render when attached directly to the parent
+// TODO: Figure out if it's possible to get bandages to work without the attachment_bandage bones
+// TODO: Do these values really need to be exposed? I guess it depends on model. My models admittedly usually have massive thighs so the bandage effect isn't even visible.
+$attachment "legL_B" "ValveBiped.attachment_bandage_legL" 0 0 0 rotate -90 -90 0
+//$attachment "legR_B" "ValveBiped.attachment_bandage_legR" 0 0 0 rotate -90 -90 0
+$attachment "armL_B" "ValveBiped.attachment_bandage_armL" 0 0 0 rotate -90 -90 0
+
+// Your actual model stuff goes here. Meshes, flexes, hitboxes, etc.
+
+$body "example" "example.dmx"
+
+$include "example_box.qci"
+$include "example_collision.qci"
+$include "example_jigglebone.qci"
+
+$surfaceprop "flesh"
+$contents "solid"
+$illumposition 0 0 36
+$eyeposition 0 0 70
+$maxeyedeflection 30
+$forcephonemecrossfade
+$ambientboost
+$mostlyopaque
+
+

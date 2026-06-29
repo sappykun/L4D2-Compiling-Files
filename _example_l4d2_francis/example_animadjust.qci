@@ -1,0 +1,16 @@
+
+// This uses the $AnimAdjustment macro found in l4d2_survivor_boilerplate/_macro_animadjustment.qci
+// See that file for more information.
+
+$AnimAdjustment Defib_jolt 0 0 -1 3 0 -2
+$AnimAdjustment Die_Incap -3 10 -2 3 0 0
+$AnimAdjustment Die_Standing 3 3 1 3 1 0
+$AnimAdjustment Idle_Incap_Pistol 0 0 2 3 0 0
+$AnimAdjustment Idle_Incap_Elites 0 0 2 3 0 0
+$AnimAdjustment Idle_Incap_Pounced 0 0 1 1 0 0
+$AnimAdjustment incap_crawl 0 0 2 3 0 0 // this will need to be commented out for Coach
+$AnimAdjustment Idle_Incap_Hanging1 0 0 -5 0 0 0
+$AnimAdjustment Idle_Incap_Hanging2 0 1 -9 0 0 0
+$AnimAdjustment Idle_Incap_Hanging3 0 0.5 -11 0 0 0
+
+
